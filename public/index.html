@@ -23,6 +23,139 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a href="/" class="navbar-brand">Shop</a>
+          <span class="navbar-text float-right">
+            Hello <strong>Joe Montana</strong>, 
+            your credit limit is <strong>$850.00</strong>
+          </span>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="mt-4">
+          <h3>Promotions</h3>
+          <label class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-label">30% OFF</span>
+          </label>
+          <label class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-label">$100.00 Discount</span>
+          </label>
+          <label class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-label">Free Shipping</span>
+          </label>
+          <label class="custom-control custom-control-inline custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <span class="custom-control-label">+ $100.00 on limit</span>
+          </label>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-9">
+            <div>
+              <h3>Products</h3>
+              <div class="row">
+                <div class="col-sm-4 mb-4">
+                  <div class="card text-center" track-by="id">
+                    <div class="card-img-top product-logo"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">iPad 4 Mini</h5>
+                      <p class="card-text">$500.01 - Stock: 0</p>
+                      <button type="button" class="btn btn-primary" disabled="disabled">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-4">
+                  <div class="card text-center" track-by="id">
+                    <div class="card-img-top product-logo"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Nirvana - LP</h5>
+                      <p class="card-text">$19.99 - Stock: 3</p>
+                      <button type="button" class="btn btn-primary">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-4">
+                  <div class="card text-center" track-by="id">
+                    <div class="card-img-top product-logo"></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Licensed Steel Gloves</h5>
+                      <p class="card-text">$30.99 - Stock: 5</p>
+                      <button type="button" class="btn btn-primary">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div>
+              <h3>Cart</h3>
+              <div class="media mb-3">
+                <div class="mr-2">
+                  <div class="rounded product-logo-small"></div>
+                </div>
+                <div class="media-body">
+                  <strong class="d-block">H&amp;M T-Shirt White</strong>
+                  <span>Quantity: 10 - $10.99</span>
+                </div>
+                <div class="media-right align-middle">
+                  <button type="button" aria-label="Remove" class="close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+              <div class="media mb-3">
+                <div class="mr-2">
+                  <div class="rounded product-logo-small"></div>
+                </div>
+                <div class="media-body">
+                  <strong class="d-block">iPad 4 Mini</strong>
+                  <span>Quantity: 2 - $500.01</span>
+                </div>
+                <div class="media-right align-middle">
+                  <button type="button" aria-label="Remove" class="close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+              <div class="media mb-3">
+                <div class="mr-2">
+                  <div class="rounded product-logo-small"></div>
+                </div>
+                <div class="media-body">
+                  <strong class="d-block">Fantastic Cotton Pants</strong>
+                  <span>Quantity: 6 - $59.59</span>
+                </div>
+                <div class="media-right align-middle">
+                  <button type="button" aria-label="Remove" class="close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">Subtotal (18 items): $1,467.46</li>
+                <li class="list-group-item">Shipping: <span> $15.00</span></li>
+                <li class="list-group-item">Taxes: $7.34</li>
+                <li class="list-group-item"><strong>Total:</strong><strong> $1,489.80</strong></li>
+              </ul>
+              <div class="mt-3 text-center">
+                <button class="btn btn-success" disabled="disabled">Checkout</button>
+                <p>Order is over limit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

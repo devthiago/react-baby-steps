@@ -99,13 +99,7 @@ export default class App extends React.Component {
               />
             </div>
             <div className='col-sm-3'>
-              <Cart
-                items={this.state.cart}
-                profile={this.state.profile}
-                promotions={this.state.selectedPromo}
-                onRemoveFromCart={() => null}
-                onCheckout={() => null}
-              />
+              <Cart />
             </div>
           </div>
         </div>
